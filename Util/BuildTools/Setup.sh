@@ -37,14 +37,14 @@ done
 # -- Set up environment --------------------------------------------------------
 # ==============================================================================
 
-command -v /usr/bin/clang++-8 >/dev/null 2>&1 || {
-  echo >&2 "clang 8 is required, but it's not installed.";
+command -v /usr/bin/clang++-10 >/dev/null 2>&1 || {
+  echo >&2 "clang 10 is required, but it's not installed.";
   exit 1;
 }
 
 CXX_TAG=c8
-export CC=/usr/bin/clang-8
-export CXX=/usr/bin/clang++-8
+export CC=/usr/bin/clang-10
+export CXX=/usr/bin/clang++-10
 
 source $(dirname "$0")/Environment.sh
 
@@ -58,7 +58,7 @@ pushd ${CARLA_BUILD_FOLDER} >/dev/null
 # -- Get and compile libc++ ----------------------------------------------------
 # ==============================================================================
 
-LLVM_BASENAME=llvm-8.0
+LLVM_BASENAME=llvm-10.0
 
 LLVM_INCLUDE=${PWD}/${LLVM_BASENAME}-install/include/c++/v1
 LLVM_LIBPATH=${PWD}/${LLVM_BASENAME}-install/lib
@@ -148,7 +148,7 @@ for PY_VERSION in ${PY_VERSION_LIST[@]} ; do
 
     pushd ${BOOST_BASENAME}-source >/dev/null
 
-    BOOST_TOOLSET="clang-8.0"
+    BOOST_TOOLSET="clang-10.0"
     BOOST_CFLAGS="-fPIC -std=c++14 -DBOOST_ERROR_CODE_HEADER_ONLY"
 
     py3="/usr/bin/env python${PY_VERSION}"
@@ -425,7 +425,7 @@ fi
 # -- Get and compile libxerces 3.2.3 ------------------------------
 # ==============================================================================
 
-XERCESC_VERSION=3.2.3
+XERCESC_VERSION=3.2.4
 XERCESC_BASENAME=xerces-c-${XERCESC_VERSION}
 
 XERCESC_TEMP_FOLDER=${XERCESC_BASENAME}
