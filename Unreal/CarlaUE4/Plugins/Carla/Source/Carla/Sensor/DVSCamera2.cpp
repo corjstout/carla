@@ -13,11 +13,6 @@
 #include "Carla/Util/RandomEngine.h"
 #include "Carla/Sensor/DVSCamera2.h"
 
-static float FColorToGrayScaleFloat2(FColor Color)
-{
-  return 0.2989 * Color.R + 0.587 * Color.G + 0.114 * Color.B;
-}
-
 ADVSCamera2::ADVSCamera2(const FObjectInitializer &ObjectInitializer)
   : Super(ObjectInitializer)
 {
