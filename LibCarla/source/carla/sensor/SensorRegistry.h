@@ -32,6 +32,7 @@ class ACollisionSensor;
 class ADepthCamera;
 class ADVSCamera;
 class ADVSCamera2;
+class ADVSCamera3;
 class AGnssSensor;
 class AInertialMeasurementUnit;
 class ALaneInvasionSensor;
@@ -61,6 +62,7 @@ namespace sensor {
     std::pair<ADepthCamera *, s11n::ImageSerializer>,
     std::pair<ADVSCamera *, s11n::DVSEventArraySerializer>,
     std::pair<ADVSCamera2 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera3 *, s11n::DVSEventArraySerializer>,
     std::pair<AGnssSensor *, s11n::GnssSerializer>,
     std::pair<AInertialMeasurementUnit *, s11n::IMUSerializer>,
     std::pair<ALaneInvasionSensor *, s11n::NoopSerializer>,
@@ -88,6 +90,7 @@ namespace sensor {
 #include "Carla/Sensor/DepthCamera.h"
 #include "Carla/Sensor/DVSCamera.h"
 #include "Carla/Sensor/DVSCamera2.h"
+#include "Carla/Sensor/DVSCamera3.h"
 #include "Carla/Sensor/GnssSensor.h"
 #include "Carla/Sensor/InertialMeasurementUnit.h"
 #include "Carla/Sensor/LaneInvasionSensor.h"
