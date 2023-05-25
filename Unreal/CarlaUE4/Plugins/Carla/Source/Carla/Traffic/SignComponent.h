@@ -10,6 +10,7 @@
 #include "Components/SceneComponent.h"
 #include "Components/BoxComponent.h"
 #include "Carla/OpenDrive/OpenDrive.h"
+#include "carla/road/element/RoadInfoSignal.h"
 #include <utility>
 #include "SignComponent.generated.h"
 
@@ -18,10 +19,6 @@ namespace carla
 namespace road
 {
   class Map;
-namespace element
-{
-  class RoadInfoSignal;
-}
 }
 }
 

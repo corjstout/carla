@@ -8,6 +8,7 @@
 
 #include "CoreMinimal.h"
 #include "SignComponent.h"
+#include "Carla/Vehicle/CarlaWheeledVehicle.h"
 #include "Carla/Vehicle/WheeledVehicleAIController.h"
 #include "YieldSignComponent.generated.h"
 

@@ -9,7 +9,6 @@
 
 #include <compiler/disable-ue4-macros.h>
 #include "carla/opendrive/OpenDriveParser.h"
-#include "carla/road/element/RoadInfoSignal.h"
 #include "carla/rpc/String.h"
 #include <compiler/enable-ue4-macros.h>
 
