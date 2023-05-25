@@ -34,6 +34,12 @@ class ADVSCamera;
 class ADVSCamera2;
 class ADVSCamera3;
 class ADVSCamera4;
+class ADVSCamera5;
+class ADVSCamera6;
+class ADVSCamera7;
+class ADVSCamera8;
+class ADVSCamera9;
+class ADVSCamera10;
 class AGnssSensor;
 class AInertialMeasurementUnit;
 class ALaneInvasionSensor;
@@ -65,6 +71,12 @@ namespace sensor {
     std::pair<ADVSCamera2 *, s11n::DVSEventArraySerializer>,
     std::pair<ADVSCamera3 *, s11n::DVSEventArraySerializer>,
     std::pair<ADVSCamera4 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera5 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera6 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera7 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera8 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera9 *, s11n::DVSEventArraySerializer>,
+    std::pair<ADVSCamera10 *, s11n::DVSEventArraySerializer>,
     std::pair<AGnssSensor *, s11n::GnssSerializer>,
     std::pair<AInertialMeasurementUnit *, s11n::IMUSerializer>,
     std::pair<ALaneInvasionSensor *, s11n::NoopSerializer>,
@@ -94,6 +106,12 @@ namespace sensor {
 #include "Carla/Sensor/DVSCamera2.h"
 #include "Carla/Sensor/DVSCamera3.h"
 #include "Carla/Sensor/DVSCamera4.h"
+#include "Carla/Sensor/DVSCamera5.h"
+#include "Carla/Sensor/DVSCamera6.h"
+#include "Carla/Sensor/DVSCamera7.h"
+#include "Carla/Sensor/DVSCamera8.h"
+#include "Carla/Sensor/DVSCamera9.h"
+#include "Carla/Sensor/DVSCamera10.h"
 #include "Carla/Sensor/GnssSensor.h"
 #include "Carla/Sensor/InertialMeasurementUnit.h"
 #include "Carla/Sensor/LaneInvasionSensor.h"
